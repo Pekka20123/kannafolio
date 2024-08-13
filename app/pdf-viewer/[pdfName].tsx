@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
-import { Document, Page, type OnLoadSuccessParams } from 'react-pdf'
+import { Document, Page } from 'react-pdf'
 
 export default function PdfViewer() {
     const router = useRouter()
@@ -17,7 +17,7 @@ export default function PdfViewer() {
                 file={`/pdfs/${pdfName}.pdf`}
                 onLoadSuccess={onDocumentLoadSuccess}
             >
-                {Array.from(new Array(numPages), (el, index) => (
+                {numPages && Array.from(new Array(numPages), (el, index) => (
                     <Page key={`page_${index + 1}`} pageNumber={index + 1} />
                 ))}
             </Document>
