@@ -48,7 +48,7 @@ export default function Project({
             ))}
           </ul>
           <a 
-            href={pdfLink} 
+            href={`/pdf-viewer/${pdfLink}`}
             target="_blank" 
             rel="noopener noreferrer" 
             className="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700"
