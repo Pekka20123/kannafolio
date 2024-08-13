@@ -64,21 +64,21 @@ export const projectsData = [
     description: "I created an AI to play Super Mario Bros using Double Deep-Q networks.",
     tags: ["PyTorch", "Numpy", "OpenAI Gym", "Google Cloud Platform"],
     imageUrl: supermarioImg,
-    pdfLink: "/pdfs/mario-bros-ai",
+    pdfLink: "mario-bros-ai",
   },
   {
     title: "Data Engineering Project",
     description: "Data Engineering Project. Unfinished.",
     tags: ["Arduino", "C++", "MQTT"],
     imageUrl: arduinoImg,
-    pdfLink: "/pdfs/data-engineering-project",
+    pdfLink: "data-engineering-project",
   },
   {
     title: "Sentiment Analysis",
     description: "An AI model that analyses the sentiment of social media posts.",
     tags: ["TensorFlow", "Pandas", "SQL"],
     imageUrl: wordcloudImg,
-    pdfLink: "/pdfs/sentiment-analysis",
+    pdfLink: "sentiment-analysis",
   },
 ] as const;
 
