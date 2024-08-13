@@ -1,22 +1,26 @@
-import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
+import { useRouter } from 'next/router'
+import { useEffect, useState } from 'react'
+import { Document, Page } from 'react-pdf'
 
-export default function PdfViewer({ params }: { params: { pdfName: string } }) {
-  const [pdfSrc, setPdfSrc] = useState<string | null>(null);
+export default function PdfViewer() {
+    const router = useRouter()
+    const { pdfName } = router.query
+    const [numPages, setNumPages] = useState(null)
 
-  useEffect(() => {
-    if (params.pdfName) {
-      setPdfSrc(`/pdfs/${params.pdfName}.pdf`);
+    function onDocumentLoadSuccess({ numPages }) {
+        setNumPages(numPages)
     }
-  }, [params.pdfName]);
 
-  if (!pdfSrc) {
-    return <p>Loading...</p>;
-  }
-
-  return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-      <embed src={pdfSrc} type="application/pdf" width="100%" height="100%" />
-    </div>
-  );
+    return (
+        <div>
+            <Document
+                file={`/pdfs/${pdfName}.pdf`}
+                onLoadSuccess={onDocumentLoadSuccess}
+            >
+                {Array.from(new Array(numPages), (el, index) => (
+                    <Page key={`page_${index + 1}`} pageNumber={index + 1} />
+                ))}
+            </Document>
+        </div>
+    )
 }
