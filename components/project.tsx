@@ -12,6 +12,7 @@ export default function Project({
   description,
   tags,
   imageUrl,
+  pdfLink,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -46,6 +47,14 @@ export default function Project({
               </li>
             ))}
           </ul>
+          <a 
+            href={pdfLink} 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700"
+          >
+            Learn More
+          </a>
         </div>
 
         <Image
