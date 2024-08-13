@@ -1,13 +1,13 @@
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
-import { Document, Page } from 'react-pdf'
+import { Document, Page, type OnLoadSuccessParams } from 'react-pdf'
 
 export default function PdfViewer() {
     const router = useRouter()
     const { pdfName } = router.query
-    const [numPages, setNumPages] = useState(null)
+    const [numPages, setNumPages] = useState<number | null>(null)
 
-    function onDocumentLoadSuccess({ numPages }) {
+    function onDocumentLoadSuccess({ numPages }: { numPages: number }) {
         setNumPages(numPages)
     }
 
