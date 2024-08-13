@@ -58,30 +58,30 @@ export const experiencesData = [
     date: "2023 - present - 2026",
   },
 ] as const;
+
 export const projectsData = [
   {
     title: "Mario Bros AI",
     description: "I created an AI to play Super Mario Bros using Double Deep-Q networks.",
     tags: ["PyTorch", "Numpy", "OpenAI Gym", "Google Cloud Platform"],
     imageUrl: supermarioImg,
-    pdfLink: "mario-bros-ai",
+    pdfLink: "/pdfs/mario-bros-ai.pdf",
   },
   {
     title: "Data Engineering Project",
     description: "Data Engineering Project. Unfinished.",
     tags: ["Arduino", "C++", "MQTT"],
     imageUrl: arduinoImg,
-    pdfLink: "data-engineering-project",
+    pdfLink: "/pdfs/data-engineering-project.pdf",
   },
   {
     title: "Sentiment Analysis",
     description: "An AI model that analyses the sentiment of social media posts.",
     tags: ["TensorFlow", "Pandas", "SQL"],
     imageUrl: wordcloudImg,
-    pdfLink: "sentiment-analysis",
+    pdfLink: "/pdfs/sentiment-analysis.pdf",
   },
 ] as const;
-
 
 export const skillsData = [
   "Python",
