@@ -75,7 +75,7 @@ export const projectsData = [
     pdfLink: "/pdfs/mario-bros-ai.pdf",
   },
   {
-    title: "Sentiment Analysis",
+    title: "Decision Tree",
     description: "An AI model that employs Decision Trees to predict Parkinson's disease.",
     tags: ["SciKit-learn", "Pandas", "XGBoost"],
     imageUrl: wordcloudImg,
