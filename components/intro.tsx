@@ -5,7 +5,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
-import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
@@ -91,10 +90,11 @@ export default function Intro() {
 
         <a
           className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/in/harish-kanna-3650a430b/"
           target="_blank"
         >
           <BsLinkedin />
+          <span className="ml-2">LinkedIn</span>
         </a>
 
         <a
@@ -103,6 +103,7 @@ export default function Intro() {
           target="_blank"
         >
           <FaGithubSquare />
+          <span className="ml-2">GitHub</span>
         </a>
       </motion.div>
     </section>
