@@ -70,14 +70,14 @@ export const projectsData = [
   {
     title: "Mario Bros AI",
     description: "I created an AI to play Super Mario Bros using Double Deep-Q networks.",
-    tags: ["PyTorch", "Numpy", "OpenAI Gym", "Google Cloud Platform"],
+    tags: ["PyTorch", "Numpy", "OpenAI Gym"],
     imageUrl: supermarioImg,
     pdfLink: "/pdfs/mario-bros-ai.pdf",
   },
   {
     title: "Sentiment Analysis",
-    description: "An AI model that analyses the sentiment of social media posts.",
-    tags: ["TensorFlow", "Pandas", "SQL"],
+    description: "An AI model that employs Decision Trees to predict Parkinson's disease.",
+    tags: ["SciKit-learn", "Pandas", "XGBoost"],
     imageUrl: wordcloudImg,
     pdfLink: "/pdfs/sentiment-analysis.pdf",
   },
@@ -85,11 +85,8 @@ export const projectsData = [
 
 export const skillsData = [
   "Python",
-  "R",
   "SQL",
-  "TensorFlow",
   "PyTorch",
-  "Keras",
   "Scikit-Learn",
   "Pandas",
   "NumPy",
@@ -97,8 +94,6 @@ export const skillsData = [
   "Seaborn",
   "Jupyter",
   "Power BI",
-  "NLP",
-  "Computer Vision",
   "Deep Learning",
   "Machine Learning",
   "Data Analysis",
@@ -106,6 +101,5 @@ export const skillsData = [
   "Statistics",
   "Data Mining",
   "AWS",
-  "GCP",
 ] as const;
 
