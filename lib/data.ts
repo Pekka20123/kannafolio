@@ -69,7 +69,7 @@ export const projectsData = [
   },
   {
     title: "Data Engineering Project",
-    description: "Data Engineering Project. Unfinished.",
+    description: "A project to improve worker safety and comfort on a factory shop floor with a sustainable and energy-efficient approach.",
     tags: ["Arduino", "C++", "MQTT"],
     imageUrl: arduinoImg,
     pdfLink: "/pdfs/data-engineering-project.pdf",
